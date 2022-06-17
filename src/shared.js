@@ -27,6 +27,10 @@ export const dateDisplayRenderer = (props, name) => {
   return <div>{DateTime.fromISO(props[name]).toFormat("dd LLL yyyy")}</div>;
 };
 
+export const booleanDisplayRenderer = (props, name) => {
+  return <div>{props[name] ? "Yes" : "No"}</div>;
+};
+
 export const styles = {
   container: { margin: "auto", width: "fit-content" },
 };
